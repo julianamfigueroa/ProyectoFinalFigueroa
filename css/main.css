@@ -1,0 +1,397 @@
+html, body {
+	min-height: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	text-decoration: none;
+}
+body {
+	background: #d2daec;
+}
+
+h1 {
+	color: #e7e4ef;
+	margin-top: 8em;
+	margin-bottom: 1em;
+	font-size: 3em;
+	font-weight: 800; 
+	font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+/* MENU  - HEADER*/
+.header{
+	position: fixed; 
+	background: #1a1917;
+	padding: 1em 0em;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 100;
+}
+	.header a{
+		text-decoration: none;
+	}
+
+.logo{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 1.7em;
+	display: inline-block;
+	color: #d2daec;
+	margin-left: 1.5em;
+}
+.logo:hover{
+	color: #a7c4ff;
+	transition-duration: 0.3s;
+}
+
+.menu_sup{
+	justify-content: right;
+	align-self: center;
+	margin-right: 2em;
+}
+	.menu_sup ul {
+		list-style: none;	
+		display: inline-flex;
+		justify-content: right;
+	}
+	.menu_sup a {
+		text-decoration: none;
+		color: #898e9c;
+		margin: 2em;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-weight:800;
+		font-size: 0.9em;
+	}
+	.menu_sup a:hover {
+		color: #a7c4ff;
+	}
+	.menu_sup .logo{
+		justify-content: left;
+	}
+
+
+
+/* MAIN */
+.main {
+	padding: 5em 2em 3em 5em;
+	height: 45em;
+	justify-content: center;
+	color: #dfdde5;
+	background-color: #1a1917;
+	background-image: url("../img/tay.jpg");
+	background-size: cover;
+	background-position: 0 -10em;
+}	
+	.main p {
+		font-size: 1em;
+		line-height: 2em;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+		font-family: 'Plus Jakarta Sans', sans-serif;		
+	}
+
+
+
+/* BOTONES */
+.btn-main { 	
+	transition: border-color 0.2s ease;
+	background-color: #e4e6ef4f;
+	border-radius: 3em;
+	display: inline-block;
+	height: calc(3em + 2px);
+	outline: 0;
+	padding: 0 3em;
+	margin: 2em 1em 2em 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.9em;
+	font-weight: bold;
+	line-height: 3em;
+	color: #e7e4ef;
+}
+	.btn-main:hover{
+		background-color: #a7c4ff;
+		color: #1a1917;
+		cursor: pointer;
+	}
+
+
+
+/* MENU DISCOS */
+#discografia h2{
+	color: #e7e4ef;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 2.4em;
+	padding-top: 2em;
+	padding-left: 2em;
+	font-weight: 800;
+}
+.menu_discos {
+	background-color: #323339;
+	align-items: center;
+	justify-content: center;
+}
+	.menu_discos a{
+		text-decoration: none;
+	}
+#contenedor_img{
+	padding: 2em 8em 8em 10em;
+	justify-content: center;
+	margin: 0 auto;
+}
+.div_discos {
+	width: 10em;
+	height: 11em;
+	display: inline-block;
+	justify-content: center;
+	padding:2em 2em 3em 2em;
+	background-color: transparent;
+	border-radius: 0.5em;
+}
+	.div_discos:hover {
+		background-color: #e8e8e81e;
+		color: #dfdde5;
+	}
+	.div_discos p{
+		padding-top:1.2em;
+		margin: auto;
+		justify-content: center;
+		text-align: center;
+		color: #d6d2e2;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-weight:700;
+		font-size: 0.9em;		
+	}
+.cont_img{
+	width: 10em;
+	height: 10em;
+	justify-content: center;
+	align-self: center;
+	background-size: cover;
+}
+#cd01{
+	background-image: url("../img/albums/Ts1b.jpg");
+}
+#cd02{
+	background-image: url("../img/albums/Ts2b.jpg");
+}
+#cd03{
+	background-image: url("../img/albums/Ts3b.jpg");
+}
+#cd04{
+	background-image: url("../img/albums/Ts4b.jpg");
+}
+#cd05{
+	background-image: url("../img/albums/Ts5b.jpg");
+}
+#cd06{
+	background-image: url("../img/albums/Ts6b.jpg");
+}
+#cd07{
+	background-image: url("../img/albums/Ts7b.jpg");
+}
+#cd08{
+	background-image: url("../img/albums/Ts8b.jpg");
+}
+#cd09{
+	background-image: url("../img/albums/Ts9b.jpg");
+}
+#cd10{
+	background-image: url("../img/albums/Ts10b.jpg");
+}
+
+
+
+/* Flotante de Playlists */
+#float{
+	color: #3b415a;
+	background: #c2d5e2de;
+	border-radius: 1em;
+	position:fixed;
+	right:1em; 
+	bottom:1em; 
+	height:max-content; 
+	width: max-content;
+	z-index:90;
+	padding: 2em 2em 3em 2em;
+}
+#playlist_tit, #playlist_close{
+	padding-bottom: 1em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.9em;
+	font-weight: 800;
+	display: inline-block;
+	line-height: 1.5em;
+}
+#playlist_close{
+	margin-left: 5em;
+	padding: 0 0.5em;
+	font-weight: 400;
+}
+	#playlist_close:hover{
+		background-color: #e9edf5;
+		border-radius: 1em;
+		cursor: pointer;
+	}
+#playlists{
+	display: block;
+}
+.playlist, #playinput, .addsong{
+	margin-right: 1em;
+	margin-bottom: 0.5em;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.8em;
+	font-weight: 600;
+	text-align: left;
+	display: block;
+	padding: 0.5em 2em;
+}
+	.playlist:hover, #playinput:hover, .addsong:hover{
+		color:#3b415a;
+		background-color: #e9edf5;
+		border-radius: 1.5em;
+		cursor: pointer;
+	}
+	.playlist p, .addsong p{
+		padding: 1em;
+		display: inline;
+	}
+	#playinput{
+		background-color: #e9edf5;
+		border-radius: 1.5em;
+		color:#3b415a;
+	}
+
+
+
+/* DIV ALBUM */
+#album{
+	position:relative;
+	z-index: 10;
+} 
+.discos{
+	padding: 5em 5em;
+	color: #3b415a;
+	background-color: #ebebeb;
+	position: absolute;
+}
+	#album_titulo{
+		color: #3b415a;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 2em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+#contenedor_titulos{
+	width: 70%;
+	justify-content: center;
+	align-self: center;
+	margin-top: 20px;
+	background-color: #898e9c10;
+	border-bottom: #3b415a;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-top-left-radius: 2em;
+	border-top-right-radius: 2em;
+	margin:0 auto;
+	}
+	#contenedor_titulos:hover{
+		background-color: #c8d1df;
+		}
+#contenedor_tema{
+	width: 70%;
+	display: block;
+	justify-content: center;
+	align-self: center;
+	margin: 0;
+	padding: 0;
+	background-color: #898e9c22;
+	margin:0 auto;
+	margin-bottom: 2px;
+	}
+	#contenedor_tema:hover{
+		background-color: #a7c4ff;
+		}
+
+#titulo_nro, .tema_nro{
+	display: inline-block;
+	width: 6%;
+	text-align: center;
+	margin-left: 2em;
+}
+#titulo_nombre, .tema_nombre{
+	display: inline-block;
+	width: 30%;
+	margin-left: 2em;
+}
+#contenedor_tema img{
+	width: 1.5em;
+	justify-content: center;
+	text-align: center;
+	margin-left: 0;
+	margin-top: 0.9em;	
+	position: relative;
+}
+.tema_fav, .tema_add{
+	margin-right: 6em;
+	padding-left: 6em;
+	display: inline-block;
+	text-align: center;
+}
+.tema_add{
+	margin-right: 0;
+}
+.estrella{
+	margin-right: 0.2em;
+}
+#titulo_nombre, .tema_fav, .estrella, .tema_add{
+	cursor: pointer;
+}
+.style_tema{
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.9em;
+	font-weight: 600;
+	line-height: 3em;
+	align-self: center;
+	color: #0e2944;
+}
+.style_tema:hover{
+	font-weight: 600;
+}
+.style_titulo{
+	font-weight: 600;
+}
+	
+
+
+/* FOOTER */
+.footer{
+	justify-content: center;
+	color:#3b415a;
+	margin: 1.5em 5em;
+}
+.footer p{
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.7em;
+	font-weight: 400;
+}
+
+
+
+/* Javascript */
+.div_hide {
+	display: none;
+	opacity: 0%;
+}
+
+
+
+

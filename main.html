@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Swiftify - Home</title>
+		<meta charset="utf-8" lang="es"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500&display=swap');
+		</style>
+	</head>
+	<body>
+		
+		<!-- MENU -->
+			<section id="menu">
+				<nav class="header">
+					<a class="logo" href=#intro>Swiftify</a>
+					<div class="menu_sup">
+						<ul>
+							<li><a href="#discografia">Discografia</a></li>
+							<li><a href="playlists.html">Playlists</a></li>
+							<li><a href="favoritos.html">Favoritos</a></li>
+						</ul>
+					</div>
+				</nav>
+			</section>
+
+		<!-- MAIN -->
+			<section id="intro" class="main">
+					<h1>Bienvenido</h1>
+					<button class="btn-main" id="aplay">Mis Playlists</button> 
+					<button class="btn-main" id="afav">Favoritos</button> 
+					<button class="btn-main" id="adiscos">Discografia</button> 
+			</section>
+
+		<!-- menu_discos -->
+			<section id="discografia" class="menu_discos">
+				<h2>Discografía</h2>
+				<div id="contenedor_img">
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd01"></div> <p id="p1">Debut</p> </a></div>
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd02"></div> <p id="p2">Fearless (TV)</p></a></div>
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd03"></div> <p id="p3">Speak Now</p></a></div>
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd04"></div> <p id="p4">Red (TV)</p></a></div>
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd05"></div> <p id="p5">1989</p></a></div>
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd06"></div> <p id="p6">Reputation</p></a></div>	
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd07"></div> <p id="p7">Lover</p></a></div>
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd08"></div> <p id="p8">Folklore</p></a></div>
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd09"></div> <p id="p9">Evermore</p></a></div>
+					<div class="div_discos"><a href="#album"><div class="cont_img" id="cd10"></div> <p id="p10">Midnights</p></a></div>
+				</div>
+			</section>
+		
+		<!-- Contenedor Disco Elegido -->
+			<section id="album" class="discos">
+				<h3 id="album_titulo"> </h3>
+				<div id="contenedor_titulos" class="style_tema">
+					<div id="titulo_nro" class="style_titulo">#</div>
+					<div id="titulo_nombre" class="style_titulo">Título</div>
+				</div>
+				<div id="listado"> </div>
+			</section>
+
+		<!-- FLOAT Playlists -->
+			<div id="float">
+				<p id="playlist_tit">Tus Playlists</p> <p id="playlist_close">x</p>
+				<div id="playlists"> </div>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+					<div class="footer">
+						<p>@Swiftify 2022 - Juliana Figueroa</p>
+					</div>
+			</footer>
+			
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+		<script src="js/json.js"> </script> 
+		<script src="js/main.js"> </script> 
+			
+	</body>
+</html>

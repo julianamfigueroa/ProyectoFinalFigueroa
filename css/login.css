@@ -1,0 +1,158 @@
+html, body {
+	min-height: 100%;
+}
+* {
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+body {
+	background: #d2daec;
+    background-image: url("../img/tay2.jpg");
+    background-size: auto;
+    justify-content: center;
+}
+
+
+/* Apartado LOGIN */
+#login, #newusr{
+    display: inline-block;
+}
+.login{
+    width: 30em;
+    height: 40em;
+    margin-left: 1.5em;
+    margin-top: 10%;
+    border-right-color: #d2daec;
+    border-right-style: solid;
+    border-right-width: 1px;
+    background-color: rgba(44, 43, 48, 0.173);
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+.login:hover{
+    background-color: rgba(48, 43, 43, 0.523);
+}
+.logo{
+    font-family: 'Berkshire Swash', cursive;
+	font-size: 2.3em;
+    color: #d2daec;
+    text-align: center;
+    padding-top: 3.5em;
+    margin-bottom: 2em;
+}
+.logo:hover{
+	color: #898e9c;
+	transition-duration: 0.3s;
+}
+
+input{
+    display: block;
+    margin: 1.5em auto;
+    width: 70%;
+    height: 2em;
+    background-color: transparent;
+    border:none;
+    border-bottom-color: #d2daec;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #e3e7ef;
+}
+input[type=text], input[type=password], input[type=email]{
+    font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 0.9em;
+}
+input::placeholder{
+    font-family: 'Monserrat', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: #e3e7efd3;
+}   
+
+.login button{
+    display: block;
+    margin: 4em auto;
+    transition: border-color 0.2s ease;
+	background-color: #1d1b1b73;
+	border-radius: 2.5em;
+	height: calc(2.5em + 2px);
+	outline: 0;
+	padding: 0 2.5em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 100;
+	line-height: 2.5em;
+	color: #d2daec;
+}
+.login button:hover{
+	background-color: #898e9c7f;
+	transition-duration: 0.3s;
+    color: #d2daec;
+    font-weight: 600;
+}
+.login button.new{
+    margin: 3em auto 0 auto;
+    background-color: transparent;
+    border-color: #aeb2be;
+    color: #aeb2be;
+    border-style: solid;
+    border-width: 1px;
+}
+.login button.new:hover{
+    transition-duration: 0.3s;
+    border-color: #d2daec;
+    color: #d2daec;
+    font-weight: 600;
+}
+
+/* Apartado NUEVO USUARIO */
+#divnewusr{
+    position: absolute;
+    margin: 16.3em auto;
+}
+.newusr{
+    width: 30em;
+    height: 20em;
+    margin:0;
+    margin-left: 1.5em;
+    margin-top: 0;
+    padding-top: 0;
+}
+.newusr button{
+    display: block;
+    margin: 4em auto;
+    transition: 0.2s ease;
+	background-color: transparent;
+    border-color: #aeb2be;
+	color: #aeb2be;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2.5em;
+	height: calc(2.5em + 2px);
+	outline: 0;
+	padding: 0 2.5em;
+	text-align: center;
+	text-decoration: none;
+	font-size: 0.8em;
+	font-weight: 100;
+	line-height: 2.5em;
+}
+.newusr button:hover{
+	transition-duration: 0.3s;
+    border-color: #d2daec;
+    color: #d2daec;
+    font-weight: 600;
+}
+
+
+
+/* Javascript */
+.div_hide {
+	display:none;
+    opacity: 0;
+}
+

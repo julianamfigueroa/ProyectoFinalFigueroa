@@ -1,0 +1,264 @@
+html, body {
+	min-height: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	text-decoration: none;
+}
+
+body {
+	background: #c8d6cba9;
+}
+
+h1 {
+	color: #cfdfd3;
+	margin-top: 6em;
+	margin-bottom: 1em;
+	font-size: 3em;
+	font-weight: 800; 
+	font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+
+
+
+/* MENU  - HEADER*/
+.header{
+	position: fixed; 
+	background: #1a1917;
+	padding: 1em 0em;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	z-index: 100;
+}
+	.header a{
+		text-decoration: none;
+	}
+
+.logo{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 1.7em;
+	display: inline-block;
+	color: #d2daec;
+	margin-left: 1.5em;
+}
+.logo:hover{
+	color: #a7c4ff;
+	transition-duration: 0.3s;
+}
+
+.menu_sup{
+	justify-content: right;
+	align-self: center;
+	margin-right: 2em;
+}
+	.menu_sup ul {
+		list-style: none;	
+		display: inline-flex;
+		justify-content: right;
+	}
+	.menu_sup a {
+		text-decoration: none;
+		color: #898e9c;
+		margin: 2em;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-weight:800;
+		font-size: 0.9em;
+	}
+	.menu_sup a:hover {
+		color: #a7c4ff;
+	}
+	.menu_sup .logo{
+		justify-content: left;
+	}
+
+
+
+
+/* MAIN */
+.main {
+	padding: 5em 2em 3em 5em;
+	justify-content: center;
+	color: #dfdde5;
+	background-color: #1a1917;
+	background-image: url("../img/tay7.jpg");
+	background-size: cover;
+	background-position: 0 -10em;
+}	
+	.main p {
+		font-size: 1em;
+		line-height: 2em;
+		padding-top: 0.5em;
+		padding-bottom: 1em;
+		font-family: 'Plus Jakarta Sans', sans-serif;		
+	}
+
+
+h2{
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+
+/* PLAYLISTS */
+#playlists{
+	width: 100%;
+	display: flex;
+	align-content: center;
+} 
+
+
+#contenedor_playlists{
+	width: 20%;
+	justify-content: center;
+	background-color: #788f803f;
+	margin:left;
+	margin-top: 3em;
+	margin-left: 6em;
+	padding: 3em;
+	font-weight: 800;
+	height: max-content;
+	border-radius: 2em;
+}
+#listado{
+	width: 30%;
+	margin:left;
+	float: left;
+	padding: 3em 3em;
+	margin-left: 2em;
+	margin-top: 3em;
+	font-weight: 400;
+	background-color: #eeeeee86;
+	border-radius: 2em;
+}
+h3{
+	color: #3b415a;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 1.5em;
+	padding-bottom: 1em;
+}
+h4{
+	color: #3b415a;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 1.1em;
+	padding-bottom: 1em;
+}
+.playlists_p, .cancion{
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.9em;
+	line-height: 2em;
+	color: #3b415a;
+	margin-bottom: 0.5em;
+}
+.playlists_p:hover{
+	background-color: #788f8081;
+	cursor: pointer;
+	padding-left: 2em;
+	padding-right: 2em;
+	width: max-content;
+	border-radius: 1em;
+	transition-duration: 0.8s;
+}
+.cancion:hover{
+	font-weight: 800;
+	cursor: pointer;
+	background-color: #788f8036;
+	padding-left: 0.9em;
+	padding-right: 0.9em;
+	width: max-content;
+	border-radius: 1em;
+	transition-duration: 0.8s;
+}	
+.elimina_play{
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.8em;
+	line-height: 2em;
+	color: #3b415a;
+	background-color: #b89d8781;
+	cursor: pointer;
+	padding-left: 1.3em;
+	padding-right: 1.3em;
+	margin-top: 1.5em;
+	width: max-content;
+	border-radius: 1em;
+	float: right;
+}
+.elimina_play:hover{
+	font-weight: 600;
+}
+
+
+/* Flotantes Elimina */
+#float1, #float2{
+	color: #eeeeee;
+	background: #b6735f;
+	border-radius: 1em;
+	position:fixed;
+	height:max-content; 
+	width: max-content;
+	z-index:90;
+	align-content: center;
+	padding: 2em;
+	right:2em; 
+	bottom:25%;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-align: center;
+}
+#float1:hover, #float2:hover{
+	background: #788f80;
+}
+#elimina1, #elimina2{
+	margin-bottom: 1em;
+}
+#aceptar1, #aceptar2{
+	background-color: #69565670;
+	cursor: pointer;
+	width: max-content;
+	border-radius: 1em;
+	transition-duration: 0.8s;
+	display: inline-flex;
+	padding: 0.5em 0.8em;
+	margin: auto;
+}
+#cancelar1, #cancelar2{
+	background-color: #55695c81;
+	cursor: pointer;
+	width: max-content;
+	border-radius: 1em;
+	transition-duration: 0.8s;
+	padding: 0.5em 0.8em;
+	display: inline-flex;
+	margin: auto;
+}
+
+
+/* FOOTER */
+.footer{
+	justify-content: center;
+	color:#3b415a;
+	margin: 1.5em 5em;
+}
+.footer p{
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-size: 0.7em;
+	font-weight: 400;
+}
+
+
+
+/* Javascript */
+.div_hide {
+	display: none;
+	opacity: 0%;
+}
+
